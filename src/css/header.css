@@ -1,21 +1,29 @@
-.header {
-  padding: 20px 0;
+.f-video-container {
+  position: relative;
+  display: block;
+  width: 560px;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+.f-video-player {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.f-video-player iframe,
+.f-video-player object,
+.f-video-player embed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.f-video-cover {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
